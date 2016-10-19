@@ -10,7 +10,7 @@ public class User {
     public void chooseName() throws Exception {
         System.out.println("Hello! What is your name?");
         name = Main.scanner.nextLine();
-        if(name.length() > 0) {
+        if(name.isEmpty()) {
             System.out.println("Hello, " + name +"!");
         }
         else {
